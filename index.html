@@ -24,8 +24,17 @@
         <!-- data container  -->
         <section>
             <div class="container-fluid">
+                <!-- spinner -->
+                <div id="spinner" class="d-flex d-none justify-content-center align-items-center" style="height: 200px;">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
                 <div id="div-container" class="row row-cols-1 row-cols-md-3 g-4">
 
+                </div>
+                <div id="show-all-btn" class="text-center my-3 ">
+                    <button class="btn btn-danger">Show all</button>
                 </div>
         </section>
 
@@ -34,19 +43,17 @@
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered position-relative">
+                <div class="modal-dialog modal-xl modal-dialog-centered position-relative">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <!-- close btn  -->
+                        <button type="button" class="modal-close-btn bg-danger border-0 position-absolute end-0 top-0"
+                            data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"
+                                style="color: #ffffff;"></i></button>
 
-                            <button type="button"class="modal-close-btn bg-danger border-0 position-absolute end-0 top-0" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                        <div class="modal-body p-5">
+                            <div id="modal-body" class="row row-cols-1 row-cols-md-3 g-4">
 
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
