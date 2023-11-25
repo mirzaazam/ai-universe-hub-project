@@ -1,0 +1,14 @@
+.card-btn{
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #f8d2d2;;
+}
+
+.modal-close-btn{
+    transform: translate(21px, -17px);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
