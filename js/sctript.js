@@ -79,7 +79,7 @@ const modalCardValue = (dataString) => {
                         <div class="card h-100">
                             <img src="${data.image}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">${data.name}</h5>
                                 <p class="card-text">${data.published_in}</p>
                             </div>
                         </div>
