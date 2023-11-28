@@ -67,11 +67,31 @@ const modalCardValue = (dataString) => {
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML = `
                     <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
+                        <div class="card border-danger-subtle modal-bg-color h-100">
+                            
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <h6>Feature</h6>
+                                        <ul>
+                                            <li>${data.features[0]}</li>
+                                            <li>${data.features[1]}</li>
+                                            <li>${data.features[2]}</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h6>Feature</h6>
+                                        <ul>
+                                            <li>${data.features[0]}</li>
+                                            <li>${data.features[1]}</li>
+                                            <li>${data.features[2]}</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

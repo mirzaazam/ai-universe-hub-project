@@ -12,3 +12,7 @@
     width: 35px;
     height: 35px;
 }
+
+.modal-bg-color{
+    background-color: #f3eded !important;
+}
