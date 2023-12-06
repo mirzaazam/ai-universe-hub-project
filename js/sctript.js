@@ -61,6 +61,9 @@ const showAllData = (data) => {
     })
 }
 
+/*------------------------
+            Modal
+---------------------------*/
 const modalCardValue = (dataString) => {
     const data = JSON.parse(decodeURIComponent(dataString));
     console.log(data);
@@ -96,8 +99,9 @@ const modalCardValue = (dataString) => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card h-100">
+                        <div class="card h-100 position-relative">
                             <img src="${data.image}" class="card-img-top" alt="...">
+                            <div class="position-absolute top-0 end-0 text-white w-25 bg-danger rounded-3 text-center">Hello</div>
                             <div class="card-body">
                                 <h5 class="card-title">${data.name}</h5>
                                 <p class="card-text">${data.published_in}</p>
@@ -178,6 +182,9 @@ const showData = (data) => {
     })
 }
 
+/*-----------------------
+        spinner
+-------------------------*/
 document.getElementById('show-all-btn').addEventListener('click', function () {
     //get main container
     const container = document.getElementById('div-container');
